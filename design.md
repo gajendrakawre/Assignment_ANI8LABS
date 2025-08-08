@@ -94,7 +94,7 @@ To scale for 1,000 users, I’d make the following improvements:
     ```
   - **Description:** Deletes the PDF file from the server and removes its metadata from the database.
 
-# 4. 🔁 Data Flow Description
+# 4. Data Flow Description
 
 ## Q5. What happens when a file is uploaded?
 
@@ -116,7 +116,7 @@ To scale for 1,000 users, I’d make the following improvements:
 4. The backend reads the file from the designated folder.
 5. The file is streamed back to the frontend as a downloadable PDF.
 
-# 5. 📌 Assumptions
+# 5. Assumptions
 
 ## Q6. What assumptions did you make while building this?
 
