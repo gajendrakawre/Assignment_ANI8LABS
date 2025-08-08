@@ -34,8 +34,6 @@ The application includes:
 
 Follow these steps to run the full-stack application on your local machine.
 
----
-
 ## Backend Setup (Spring Boot + MySQL)
 
 1. **Clone the repository**
@@ -83,4 +81,83 @@ Follow these steps to run the full-stack application on your local machine.
    npm run dev
    ```
    The frontend will run at: `http://localhost:5173` (default Vite port)
+
+## Example API Calls (cURL & Postman)
+
+Here are example requests for testing the backend API using cURL or importing into Postman.
+
+## Upload a PDF File
+
+**Endpoint:**  
+```
+POST /documents/upload
+```
+
+**cURL Example:**
+```bash
+curl -X POST http://localhost:8080/documents/upload \
+  -F "file=@/path/to/your/document.pdf"
+```
+
+**Postman Setup:**
+- Method: POST  
+- URL: `http://localhost:8080/documents/upload`  
+- Body: form-data  
+  - Key: `file` (type: File)  
+  - Value: (Select a `.pdf` file from your system)
+
+---
+
+### List All Documents
+
+**Endpoint:**  
+```
+GET /documents
+```
+
+**cURL Example:**
+```bash
+curl http://localhost:8080/documents
+```
+
+**Postman Setup:**
+- Method: GET  
+- URL: `http://localhost:8080/documents`
+
+---
+
+### Download a File
+
+**Endpoint:**  
+```
+GET /documents/{id}
+```
+
+**cURL Example:**
+```bash
+curl -O http://localhost:8080/documents/1
+```
+
+**Postman Setup:**
+- Method: GET  
+- URL: `http://localhost:8080/documents/1`  
+- Click "Send and Download" to retrieve the file.
+
+---
+
+### Delete a File
+
+**Endpoint:**  
+```
+DELETE /documents/{id}
+```
+
+**cURL Example:**
+```bash
+curl -X DELETE http://localhost:8080/documents/1
+```
+
+**Postman Setup:**
+- Method: DELETE  
+- URL: `http://localhost:8080/documents/1`
 
