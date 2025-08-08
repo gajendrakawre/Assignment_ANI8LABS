@@ -1,5 +1,7 @@
 # Assignment_ANI8LABS
 
+---
+
 ## Project Overview
 
 This portal enables users to:
@@ -29,6 +31,8 @@ The application includes:
   - Filename
   - File size
   - Upload timestamp
+
+ ---
  
 ## How to Run It Locally
 
@@ -63,6 +67,7 @@ Follow these steps to run the full-stack application on your local machine.
    ```
    The backend will start at: `http://localhost:8080`
 
+---
 
 ## Frontend Setup (React + Vite)
 
@@ -81,6 +86,8 @@ Follow these steps to run the full-stack application on your local machine.
    npm run dev
    ```
    The frontend will run at: `http://localhost:5173` (default Vite port)
+
+---
 
 ## Example API Calls (cURL & Postman)
 
