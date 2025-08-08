@@ -7,7 +7,7 @@ This portal enables users to:
 -  Upload medical documents (PDF only)
 -  View all uploaded files
 -  Download any document
-- 🗑 Delete documents when no longer needed
+-  Delete documents when no longer needed
 
 All files are stored locally in an `uploads/` folder, and metadata is saved in a MySQL database.
 
