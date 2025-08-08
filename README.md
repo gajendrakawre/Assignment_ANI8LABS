@@ -30,7 +30,7 @@ The application includes:
   - File size
   - Upload timestamp
  
-## 🚀 How to Run It Locally
+## How to Run It Locally
 
 Follow these steps to run the full-stack application on your local machine.
 
